@@ -89,16 +89,22 @@
 
    // a function takes in names of members in the family and output the result
 
+    //step 1 create the functions with an argument
    function familytree(father,mother,sister,others)
    {
+        //add the arguments together
         var familytree = father + '\n' + mother + '\n' + sister + '\n' + others;
+       //print the argument
         console.log(familytree);
    }
 
+   // ask user for the inputs
    var father = prompt('what is your fathers name');
    var mother = prompt('what is your mothers name');
    var sister = prompt('what is your sisters name');
    var others = prompt('One more family Member pleease');
+
+   //returns this values to the functions argument
 
    familytree(father,mother,sister,others);
    
