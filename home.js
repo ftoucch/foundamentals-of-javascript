@@ -85,11 +85,13 @@
    // sumNumbers(10,10);
 
 
-   /* MY ASSIGNMENT
+   //MY ASSIGNMENT
+
+   // a function takes in names of members in the family and output the result
 
    function familytree(father,mother,sister,others)
    {
-        var familytree = father + ' ' + mother + ' ' + sister + ' ' + others;
+        var familytree = father + '\n' + mother + '\n' + sister + '\n' + others;
         console.log(familytree);
    }
 
@@ -99,4 +101,4 @@
    var others = prompt('One more family Member pleease');
 
    familytree(father,mother,sister,others);
-   */
+   
