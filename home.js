@@ -98,7 +98,7 @@
         console.log(familytree);
    }
 
-   // ask user for the inputs
+   /* ask user for the inputs
    var father = prompt('what is your fathers name');
    var mother = prompt('what is your mothers name');
    var sister = prompt('what is your sisters name');
@@ -107,4 +107,46 @@
    //returns this values to the functions argument
 
    familytree(father,mother,sister,others);
-   
+   */
+
+   /*while Loops
+
+   var num = 0;
+
+   while (num < 100)
+   {
+       num += 1;
+       console.log(num);
+   }
+
+    */
+
+   // for loops
+
+ //  for (let num=0; num<=100; num++)
+   // {
+     //  console.log(num);
+   // }
+
+    // Data types
+    let your_age = 18;
+    let yourName = 'Bob';
+    let name = {first: 'jane', last:'Doe'}; //object
+    let truth = false; //boolean
+    let groceries = ['Apple', 'Banana', 'Oranges']; //array
+    let random; //undefined
+    let nothinig = null; //value null
+
+
+    //Strings in JavaScript (Common method)
+
+    let fruit = 'banana';
+    let moreFruit = 'banana\napple' // new line
+    console.log(fruit.length);  //check the length
+    console.log(fruit.indexOf('an')); //check if a character is present in string
+    console.log(fruit.slice(2,6)); // slice from an end to another end
+    console.log(fruit.replace('ban','123')); //replace a string with another
+    console.log(fruit.toLowerCase()); // convert string to Lowercase
+    console.log(fruit.toUpperCase()); //Convert string to Uppercase
+    console.log(fruit.charAt(2)); //get a character at a specific number location
+    console.log(fruit.split('')); //split a Character with ''
