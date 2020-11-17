@@ -216,8 +216,82 @@
     for(let num = 0; num <= 10; num++)
     {
         // let addN = prompt('add any Number'); an additional function to allow user create their own array
-        emptyArray.push(addN);
+        emptyArray.push(num);
     }
 
     console.log(emptyArray);
 
+    // Objects in Javascript
+
+    let student = {
+        first: 'Alimi',
+        last: 'Fatai', 
+        age:25, 
+        height:170,
+        studentInfo: function()
+        {
+            return this.first + '\n' + this.last + '\n' + this.age;
+        }
+    };
+   // console.log(student.first);
+   // console.log(student.last);
+
+    //student.first = 'not rafeal'; //changes values
+    //console.log(student.first);
+
+    student.age++;
+
+    console.log(student.age);
+
+    console.log(student.studentInfo())
+
+
+    // Conditionals, Control Flows (if else)
+
+    //18-35 is my target dermographic
+
+    //&& AND
+    // || OR
+
+        var age = 45;
+    if( (age>=18) && (age<35) )
+    {
+        status ='target demo'
+        console.log(status);
+    }
+    else
+    {
+        status = 'not my audience'
+        console.log(status);
+    }
+
+
+    //Switch Statement
+    //differentiate Between weekdays vs. Weekend
+    //day 0----->Sunday ----> weekend
+    //day 1----->Monday ----> weekday
+    //day 2----->Tuesday ----> weekday
+    //day 3----->Wednesday ----> weekday
+    //day 4----->thursday ----> weekday
+    //day 5----->Friday ----> weekday
+    //day 6---> saturday ----> weekend
+
+    // var day = prompt('pick a number of the day');
+    
+
+    switch(0)
+    {
+        case 0 :
+            text = 'Weekend ';
+            break;
+        case 5:
+             text = 'Weekend';
+             break;
+        case 6:
+            text = 'weekday';
+            break;
+        default:
+            text ='weekday';
+    }
+
+    console.log(text);
