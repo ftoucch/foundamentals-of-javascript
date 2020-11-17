@@ -150,3 +150,74 @@
     console.log(fruit.toUpperCase()); //Convert string to Uppercase
     console.log(fruit.charAt(2)); //get a character at a specific number location
     console.log(fruit.split('')); //split a Character with ''
+
+
+    // Array
+    let fruits = ['banana', 'apple', 'orange', 'pineapples'];
+     fruits = new Array ('banana', 'apple', 'orange', 'pineapples');
+
+    console.log(fruits[2]); //access value at index 2nd
+
+    fruits[0] = 'pear';
+    console.log(fruits);
+
+    for (let i = 0; i< fruits.length; i++)
+    {
+        console.log(fruits[i]);
+    }
+
+
+    // Array Common Method
+
+    console.log('to string', fruits.toString());  // converts array to string
+
+    console.log('Join', fruits.join(' - ')); // Joins character in array with a specifed character
+
+    console.log(fruits, fruits.pop(), fruits); // removes the last time and returns it 
+
+    console.log(fruits.push('blackberries'), fruits); //appends an item
+
+    console.log (fruits[4]) ;
+
+    fruits[fruits.length] = 'new fruit' ; //same as push
+
+    console.log(fruits);
+
+
+    fruits.shift(); //removes the first element from array
+
+    console.log(fruits);
+
+    fruits.unshift('kiwi');  // adds a first elelment to an array
+
+    console.log(fruits);
+
+    let vegetables = ['asparagus', 'tomato', 'broccoli'];
+    let allGroceries = fruits.concat(vegetables); // combines all arrays
+
+    console.log(allGroceries);
+
+
+    console.log(allGroceries.slice(1,4));  //slice an array
+
+    console.log(allGroceries.reverse());   // reverse the array
+
+    console.log(allGroceries.sort());  // sorts object alphabetically
+
+
+    let someNumbers = [5, 10, 2, 25, 3, 255, 1, 2, 5, 334, 321, 2];
+    console.log(someNumbers.sort(function(a,b) {return a-b})); // sorted in ascending number
+    console.log(someNumbers.sort(function(a,b) {return a-b})); // sorted in decending number
+
+
+    //function to loop through and add element to an array
+    let emptyArray = new Array()  
+
+    for(let num = 0; num <= 10; num++)
+    {
+        // let addN = prompt('add any Number'); an additional function to allow user create their own array
+        emptyArray.push(addN);
+    }
+
+    console.log(emptyArray);
+
